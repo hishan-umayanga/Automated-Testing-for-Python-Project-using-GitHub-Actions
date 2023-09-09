@@ -1,4 +1,4 @@
-
+from pycalculator import add, sub, mul, divide
 def test_add():
     assert add(2, 3) == 5
     assert add(0, 0) == 0
@@ -20,18 +20,7 @@ def test_divide():
     assert divide(10, 2) == 5
     assert divide(8, 0) is None  # Division by zero
 
-# Main calculator functions
-def add(num1, num2):
-    return num1 + num2
 
-def sub(num1, num2):
-    return num1 - num2
-
-def mul(num1, num2):
-    return num1 * num2
-
-def divide(num1, num2):
-    return num1 / num2 if num2 != 0 else None
 
 # Main calculator logic
 def main():
